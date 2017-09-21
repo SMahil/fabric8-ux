@@ -156,16 +156,16 @@
     <li class="legend">LEGEND</li>
   </ul>
   <ul class="status-list col-sm-3">
-    <li class="orange">In Progress</li>
-    <li class="blue">Ready for Implementation</li>
+    <li class="light-blue light-blue-text">In Progress</li>
+    <li class="blue">Ready for Dev</li>
   </ul>
   <ul class="status-list col-sm-3">
     <li class="green">UXD Verified</li>
-    <li class="red">Designs Needing Updates</li>
+    <li class="orange">Needs Updates</li>
   </ul>
   <ul class="status-list col-sm-3">
-    <li class="purple">Planned</li>
-    <li class="grey">Unplanned</li>
+    <li class="purple">Not Yet Started</li>
+    <li class="red">Needs Review</li>
   </ul>
 </div>
 
@@ -203,10 +203,11 @@
     $("table").addClass("table table-striped table-bordered table-hover").attr("id", "designTable");
     // $("table").attr("id", "myTable2");
     $("table>tbody>tr>td>a").attr("target", "top");
-    $("table>tbody>tr>td:contains('Out of Date')").addClass("red");
+    $("table>tbody>tr>td:contains('Needs Updates')").addClass("orange");
+    $("table>tbody>tr>td:contains('Needs Review')").addClass("red");
     $("table>tbody>tr>td:contains('Done')").addClass("green");
     $("table>tbody>tr>td:contains('Ready for Dev')").addClass("blue");
-    $("table>tbody>tr>td:contains('In Progress')").addClass("orange");
+    $("table>tbody>tr>td:contains('In Progress')").addClass("light-blue");
     $("table>tbody>tr>td:contains('TBD')").addClass("grey");
     $("table>tbody>tr>td:contains('Not Yet Started')").addClass("purple");
     </script>

@@ -156,16 +156,16 @@
     <li class="legend">LEGEND</li>
   </ul>
   <ul class="status-list col-sm-3">
-    <li class="orange">In Progress</li>
-    <li class="blue">Ready for Implementation</li>
+    <li class="light-blue light-blue-text">In Progress</li>
+    <li class="blue">Ready for Dev</li>
   </ul>
   <ul class="status-list col-sm-3">
     <li class="green">UXD Verified</li>
-    <li class="red">Designs Needing Updates</li>
+    <li class="orange">Needs Updates</li>
   </ul>
   <ul class="status-list col-sm-3">
-    <li class="purple">Planned</li>
-    <li class="grey">Unplanned</li>
+    <li class="purple">Not Yet Started</li>
+    <li class="red">Needs Review</li>
   </ul>
 </div>
 
@@ -212,7 +212,7 @@
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/630">Che Starting</a></td>
       <td style="text-align: left">Wireframe</td>
       <td style="text-align: left">Adam</td>
-      <td style="text-align: left">Design Needs Review</td>
+      <td style="text-align: left">Needs Review</td>
       <td style="text-align: left">08/25/2017</td>
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/630">UX GitHub Issue 630</a></td>
     </tr>
@@ -220,7 +220,7 @@
       <td style="text-align: left"><a href="https://redhat.invisionapp.com/share/U2D95C1EC">Codebases and Workspaces</a></td>
       <td style="text-align: left">Wireframe</td>
       <td style="text-align: left">Tao</td>
-      <td style="text-align: left">Design Needs Review</td>
+      <td style="text-align: left">Needs Review</td>
       <td style="text-align: left">08/21/2017</td>
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/599">UX Github Issue 599</a></td>
     </tr>
@@ -228,7 +228,7 @@
       <td style="text-align: left"><a href="https://redhat.invisionapp.com/share/QNAOD7PF4">Create Space + Create Application Wizard</a></td>
       <td style="text-align: left">Wireframes</td>
       <td style="text-align: left">Sj &amp; Cat</td>
-      <td style="text-align: left">Design Needs Updates</td>
+      <td style="text-align: left">Needs Updates</td>
       <td style="text-align: left">08/21/2017</td>
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/444">UX GitHub Issue 444</a></td>
     </tr>
@@ -348,7 +348,7 @@
       <td style="text-align: left"><a href="https://redhat.invisionapp.com/share/MECYL572D">Multi-select type-ahead dropdown</a></td>
       <td style="text-align: left">Wireframe</td>
       <td style="text-align: left">Haley</td>
-      <td style="text-align: left">Design Needs Review</td>
+      <td style="text-align: left">Needs Review</td>
       <td style="text-align: left">09/18/2017</td>
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/516">UX GutHub Issue 516</a></td>
     </tr>
@@ -372,7 +372,7 @@
       <td style="text-align: left"><a href="https://redhat.invisionapp.com/share/QVDA5TLE4">Notifications</a></td>
       <td style="text-align: left">Wireframe</td>
       <td style="text-align: left">Tao</td>
-      <td style="text-align: left">Design Needs Review</td>
+      <td style="text-align: left">Needs Review</td>
       <td style="text-align: left">08/31/2017</td>
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/432">UX Github Issue 432</a></td>
     </tr>
@@ -380,7 +380,7 @@
       <td style="text-align: left"><a href="https://redhat.invisionapp.com/share/C9DGY7QPQ">OSIO Registration Flow</a></td>
       <td style="text-align: left">Workflow + Wireframe</td>
       <td style="text-align: left">Michael + Cat</td>
-      <td style="text-align: left">Design Needs Updates</td>
+      <td style="text-align: left">Needs Updates</td>
       <td style="text-align: left">09/13/2017</td>
       <td style="text-align: left"><a href="https://github.com/fabric8-ui/fabric8-ux/issues/646">UX Github Issue 646</a></td>
     </tr>
@@ -483,10 +483,11 @@
     $("table").addClass("table table-striped table-bordered table-hover").attr("id", "designTable");
     // $("table").attr("id", "myTable2");
     $("table>tbody>tr>td>a").attr("target", "top");
-    $("table>tbody>tr>td:contains('Out of Date')").addClass("red");
+    $("table>tbody>tr>td:contains('Needs Updates')").addClass("orange");
+    $("table>tbody>tr>td:contains('Needs Review')").addClass("red");
     $("table>tbody>tr>td:contains('Done')").addClass("green");
     $("table>tbody>tr>td:contains('Ready for Dev')").addClass("blue");
-    $("table>tbody>tr>td:contains('In Progress')").addClass("orange");
+    $("table>tbody>tr>td:contains('In Progress')").addClass("light-blue");
     $("table>tbody>tr>td:contains('TBD')").addClass("grey");
     $("table>tbody>tr>td:contains('Not Yet Started')").addClass("purple");
     </script>
